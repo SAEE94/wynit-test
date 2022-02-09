@@ -3,6 +3,7 @@ package com.example.demo.web;
 import com.example.demo.model.UserDTO;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("usuario")
+@CrossOrigin("*")
 public class UserController {
 
   private static List<UserDTO> usuarios = new ArrayList<>();
